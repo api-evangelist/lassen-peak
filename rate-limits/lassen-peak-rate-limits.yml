@@ -1,0 +1,16 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.lassenpeak.com/ (full site walk, 2026-08-23)
+limit_count: 0
+note: >-
+  No rate limits are published because no API is published. Lassen Peak has no developer portal,
+  no API reference and no machine-readable contract on any host it controls, so there are no
+  documented windows, quotas, burst allowances, RateLimit-* / X-RateLimit-* response headers or
+  429 semantics to record. An honest zero, not an unchecked field.
+headers: []
+limits: []
+evidence:
+- url: https://www.lassenpeak.com/openapi.json
+  status: 404
+- url: https://www.lassenpeak.com/api-docs
+  status: 404

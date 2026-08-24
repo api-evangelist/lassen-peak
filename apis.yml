@@ -1,17 +1,33 @@
 aid: lassen-peak
 name: Lassen Peak
-description: 'Lassen Peak is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Lassen Peak, Inc. is a Seattle-area public-safety technology company founded in 2019 by veterans of
+  ultra-high-speed wireless, imaging radar, broadband communications and law enforcement. It builds
+  AirFrisk, a handheld terahertz imaging-radar scanner that detects concealed weapons at a distance
+  without a hands-on pat-down, and ImageVault, the companion cloud console that manages AirFrisk users,
+  devices, scan data, retention policy, alerts, reporting and audit logs for an agency under FBI-CJIS
+  compliant storage. The company has raised roughly $22M across Series A and A1 rounds and holds
+  multiple issued US patents. Lassen Peak sells a device plus a customer-tenant cloud console to police,
+  sheriff and security agencies; as of this profile it publishes no public developer program, no API
+  documentation, no SDKs and no machine-readable contract of any kind on its own domain.
 url: https://raw.githubusercontent.com/api-evangelist/lassen-peak/refs/heads/main/apis.yml
+image: https://www.lassenpeak.com/wp-content/uploads/2023/12/LassesPeakLogo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Public Safety
+- Law Enforcement
+- Security
+- Weapon Detection
+- Imaging Radar
+- Hardware
+- Devices
+- Cloud
+- Government
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,62 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lassen-peak-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.lassenpeak.com/
+- type: About
+  url: https://www.lassenpeak.com/about/
+- type: Support
+  url: https://www.lassenpeak.com/contact/
+- type: FAQ
+  url: https://www.lassenpeak.com/faq/
+- type: Blog
+  url: https://www.lassenpeak.com/blog/
+- type: BlogRSS
+  url: https://www.lassenpeak.com/feed/
+- type: PressReleases
+  url: https://www.lassenpeak.com/press-releases/
+- type: PrivacyPolicy
+  url: https://www.lassenpeak.com/privacy-policy/
+- type: Careers
+  url: https://www.lassenpeak.com/careers-at-lassen-peak/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lassen-peak/
+- type: Twitter
+  url: https://twitter.com/lassen_peak
+- type: Product
+  url: https://www.lassenpeak.com/airfrisk/
+- type: Product
+  url: https://www.lassenpeak.com/imagevault/
+- type: Plans
+  url: plans/lassen-peak-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/lassen-peak-rate-limits.yml
+- type: LLMsTxt
+  url: llms/lassen-peak-llms.txt
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Lassen Peak sells a handheld weapon-detection device (AirFrisk) plus a customer-tenant cloud
+    console (ImageVault) to law-enforcement agencies; its entire 17-page WordPress site has no
+    developer, docs or API section, api./developer./docs.lassenpeak.com do not resolve in DNS, and
+    the only gated surface is a TalentLMS training tenant for end users, not an API.
+  evidence:
+  - url: https://www.lassenpeak.com/openapi.json
+    status: 404
+  - url: https://www.lassenpeak.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.lassenpeak.com/sitemap_index.xml
+    status: 200
+  - url: https://api.github.com/orgs/lassenpeak
+    status: 404
+  - url: https://lassenpeak.talentlms.com/plus/login
+    status: 200
+  checked: '2026-08-23'

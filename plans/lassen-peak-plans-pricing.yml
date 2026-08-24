@@ -1,0 +1,20 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.lassenpeak.com/ (full site walk of page-sitemap.xml, 2026-08-23)
+plan_count: 0
+note: >-
+  Lassen Peak publishes no pricing, plans or tiers of any kind. The site's complete page sitemap
+  (17 URLs) contains no /pricing, /plans or /buy page; AirFrisk and ImageVault are sold to police,
+  sheriff and security agencies through direct contact (mailto:info@lassenpeak.com and the /contact/
+  form), and the FAQ states the product is still in pilot with general availability to be announced.
+  There is no self-serve signup and no published quota, overage or contract term.
+sales_model: direct-sales
+contact:
+  url: https://www.lassenpeak.com/contact/
+  email: info@lassenpeak.com
+plans: []
+evidence:
+- url: https://www.lassenpeak.com/sitemap_index.xml
+  status: 200
+- url: https://www.lassenpeak.com/contact/
+  status: 200

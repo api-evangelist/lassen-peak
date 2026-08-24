@@ -1,0 +1,54 @@
+# Lassen Peak
+
+> Lassen Peak, Inc. is a Seattle-area public-safety technology company (founded 2019) that builds
+> AirFrisk, a handheld terahertz imaging-radar scanner for detecting concealed weapons without a
+> hands-on pat-down, and ImageVault, the FBI-CJIS-compliant cloud console that manages AirFrisk
+> users, devices, scan data, retention policy, alerts, reporting and audit logs for an agency.
+
+## Agent-relevant summary
+
+- Lassen Peak publishes **no public API**. As of 2026-08-23 there is no developer portal, no API
+  reference, no OpenAPI/AsyncAPI/GraphQL/Postman artifact, no SDK in any public package registry,
+  no public GitHub organization, and no `/.well-known/` discovery surface on any host it controls.
+- Products are sold direct to police, sheriff and security agencies. There is no self-serve signup,
+  no published pricing, and no documented rate limits.
+- Customer training and user guides (AirFrisk, ImageVault User/Supervisor, ImageVault Administrator)
+  sit behind a TalentLMS tenant login at https://lassenpeak.talentlms.com/plus/login and are not
+  API documentation.
+- The only machine-readable surface on the domain is the default WordPress REST API at
+  https://www.lassenpeak.com/wp-json/ — the marketing site's CMS, not a Lassen Peak product API.
+  It is recorded here for accuracy and is deliberately NOT profiled as a company API.
+
+## Products
+
+- [AirFrisk](https://www.lassenpeak.com/airfrisk/): handheld terahertz imaging-radar concealed
+  weapon detection scanner; ~1 mW radiated power, non-ionizing, ~12h battery target, material
+  agnostic (plastic, polymer, wood, metal), on-screen overlay of detected object location.
+- [ImageVault](https://www.lassenpeak.com/imagevault/): cloud management for AirFrisk users,
+  devices and scan data — FBI-CJIS compliant storage, historical scan review, configurable
+  agency fields and retention policy, alerts, role management, pre-configured reporting, and
+  audit logs of all user activity.
+- [Public Safety](https://www.lassenpeak.com/public-safety/): the agency-facing solution page.
+
+## Company
+
+- [About Us](https://www.lassenpeak.com/about/)
+- [FAQs](https://www.lassenpeak.com/faq/)
+- [Testimonials](https://www.lassenpeak.com/testimonials/)
+- [Press Releases](https://www.lassenpeak.com/press-releases/)
+- [Blog](https://www.lassenpeak.com/blog/) ([RSS](https://www.lassenpeak.com/feed/))
+- [Careers](https://www.lassenpeak.com/careers-at-lassen-peak/)
+- [Contact](https://www.lassenpeak.com/contact/) — info@lassenpeak.com
+- [Privacy Policy](https://www.lassenpeak.com/privacy-policy/)
+- [LinkedIn](https://www.linkedin.com/company/lassen-peak/) · [X/Twitter](https://twitter.com/lassen_peak)
+
+## Optional
+
+- [Resources / training](https://www.lassenpeak.com/resources/) — links to the gated TalentLMS tenant.
+- Funding: ~$22M raised across Series A and A1; multiple issued US patents on handheld terahertz
+  concealed weapon detection.
+
+## Provenance
+
+Generated 2026-08-23 by the API Evangelist enrichment pipeline from Lassen Peak's own public
+website. Not published by Lassen Peak. Every link above returned HTTP 200 when probed.

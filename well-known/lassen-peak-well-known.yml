@@ -1,0 +1,45 @@
+generated: '2026-08-23'
+method: probed
+source: live probes of https://www.lassenpeak.com/.well-known/* (2026-08-23)
+note: >-
+  Lassen Peak serves its only public host (www.lassenpeak.com, WordPress) with no /.well-known/
+  discovery surface at all. Every canonical path returned HTTP 404. Two 404 shapes were observed:
+  the nginx text 404 (security.txt, llms.txt) and the WordPress themed 404 page (~102KB HTML) for
+  paths that reach the WP router. Both carry a real 404 status, so this host is NOT a soft-404
+  catch-all. hit_count is 0 and NO WellKnown or SecurityTxt pointer is emitted — this file records
+  a measured absence, not a served surface.
+hit_count: 0
+hosts:
+- host: https://www.lassenpeak.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_404_control:
+  path: /.well-known/this-should-not-exist-zzz
+  status: 404
+  bytes: 102203
+  verdict: >-
+    Control path returns 404 (WordPress themed error page). The host does not answer 200 for
+    arbitrary /.well-known/* paths, so the 404s above are genuine absences.
