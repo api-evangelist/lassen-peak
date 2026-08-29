@@ -11,6 +11,17 @@ description: >-
   sheriff and security agencies; as of this profile it publishes no public developer program, no API
   documentation, no SDKs and no machine-readable contract of any kind on its own domain.
 url: https://raw.githubusercontent.com/api-evangelist/lassen-peak/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.lassenpeak.com/wp-content/uploads/2023/12/LassesPeakLogo.svg
 x-type: company
 x-source: harvest:secondary-market
